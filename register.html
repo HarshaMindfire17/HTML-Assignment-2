@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration page</title>
+	<style>
+		body{
+			background-image: url("gift.jpg");
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+  			background-size: 100% 100%;
+		}
+		.pos{
+			position: absolute;
+			right:150px;
+			top: 20px;
+			width:40%;
+			height:90%;
+			border: 2px solid black;
+		}
+		input{
+			border-radius:5px;
+		}
+		
+		.form-label{
+			float:left;
+			font-weight: bold;
+			width:20%
+		}
+		.form-input{
+			text-align: left;
+			float: left;
+			width: 80%;
+		}
+		.form-row::after{
+			content: ".";
+			clear:both;
+			visibility: hidden;
+			height: 5px;
+			display: block;
+		}
+	</style>
+</head>
+<body>
+	<div class= "pos">
+		<div style="border-bottom:1px solid black;text-align: center;font-size: 35px;">
+			<img src="icon.jpg" alt="gift" style="width:35px;height:35px;margin-top: 5px;">
+			Free Gifts
+			<img src="icon.jpg" alt="gift" style="width:35px;height:35px;margin-top:5px;">
+		</div>
+		
+		<form action="">
+			<fieldset style="margin:5px;">
+			  <legend style="font-size: 25px;">Register Here:</legend>
+			  <div class="form-row">
+					<div class="form-label">
+						<label for="fname">First Name</label>
+					</div>
+					<div class="form-input">
+						<input type="text" name="fname" required>
+					</div>
+			  </div>
+			  <div class="form-row">
+					<div class="form-label">
+						<label for="mname">Middle Name</label>
+					</div>
+					<div class="form-input">
+						<input type="text" name="mname">
+					</div>
+			  </div>
+			  <div class="form-row">
+					<div class="form-label">
+						<label for="lname">Last Name</label>
+					</div>
+					<div class="form-input">
+						<input type="text" name="lname" required>
+					</div>
+			  </div>
+			  <div class="form-row">
+					<div class="form-label">
+						<label for="date">Birthday</label>
+					</div>
+					<div class="form-input">
+						<input type="date" name="date" placeholder="date">
+					</div>
+			  </div>
+			  <div class="form-row">
+					<div class="form-label">
+						<label for="gender">Gender</label>
+					</div>
+					<div class="form-input">
+						  <input type="radio" id="male" name="gender" value="male">
+						  <label for="male">Male</label>
+						  <input type="radio" id="female" name="gender" value="female">
+						  <label for="female">Female</label>
+						  <input type="radio" id="other" name="gender" value="other">
+						  <label for="other">Other</label>
+					</div>
+				</div>
+			  <div class="form-row">
+					<div class="form-label">
+						<label for="mail">Email</label>
+					</div>
+					<div class="form-input">
+						<input type="text" name="mail" required>
+					</div>
+			  </div>
+			  <div class="form-row">
+				<div class="form-label">
+					<label for="password">Create a password</label>
+				</div>
+				<div class="form-input">
+					<input type="password" name="password" required>
+				</div>
+			  </div>
+			  <div class="form-row">
+					<div class="form-label">
+						<label for="phno">Phone No.</label>
+					</div>
+					<div class="form-input">
+						<input type="tel" name="phno" placeholder="+91 XXXXXXXXXX"; pattern="[+91 ]{4}[0-9]{10}" required>
+					</div>
+			  </div>
+
+			  <div class="form-row">
+					<div class="form-label">
+						<label for="city">City</label>
+					</div>
+					<div class="form-input">
+						<input type="text" name="city">
+					</div>
+				</div>
+			  <div class="form-row">
+					<div class="form-label">
+						<label for="state">State</label>
+					</div>
+					<div class="form-input">
+						<input type="text" name="state">
+					</div>
+				</div>
+			  <div class="form-row">
+					<div class="form-label">
+						<label for="to">Country</label>
+					</div>
+					<div class="form-input">
+						<select name="to">
+							<option>--Select one--</option><option>India</option><option>U.S</option><option>U.K</option>
+							<option>China</option><option>Japan</option><option>France</option><option>Germany</option><option>Russia</option><option>Australia</option><option>Sri Lanka</option><option>Canada</option><option>Brazil</option>
+						</select>
+					</div>
+				</div>
+			  <div class="form-row">
+					<div class="form-label">
+						<label for="zip">Zip Code</label>
+					</div>
+					<div class="form-input">
+						<input type="number" name="zip" required>
+					</div>
+				</div>
+			  <div class="form-row">
+					<div class="form-label">
+						<label for="sports">Sports</label>
+					</div>
+					<div class="form-input">
+					  <input type="checkbox" id="cricket" name="cricket" value="cricket">
+					  <label for="cricket">Cricket</label>
+					  <input type="checkbox" id="baseball" name="baseball" value="baseball">
+					  <label for="baseball">Baseball</label>
+					  <input type="checkbox" id="football" name="football" value="football">
+					  <label for="baseball">Football</label>
+					  <input type="checkbox" id="basketball" name="basketball" value="basketball">
+					  <label for="basketball">Basket ball</label><br>
+					  <input type="checkbox" id="swim" name="swim" value="swim">
+					  <label for="swim">Swimming</label>
+					  <input type="checkbox" id="badminton" name="badminton" value="badminton">
+					  <label for="badminton">Badminton</label>
+					  <input type="checkbox" id="Rowing" name="rowing" value="rowing">
+					  <label for="rowing">Rowing</label>
+					</div>
+			  </div>
+			  <div class="form-row">
+					<div class="form-label">
+						<label for="books">Books</label>
+					</div>
+					<div class="form-input">
+					  <input type="checkbox" id="Fiction" name="Fiction" value="Fiction">
+					  <label for="Fiction">Fiction</label>
+					  <input type="checkbox" id="Suspense" name="Suspense" value="Suspense">
+					  <label for="baseball">Suspense</label>
+					  <input type="checkbox" id="Crime" name="Crime" value="Crime">
+					  <label for="baseball">Crime</label>
+					  <input type="checkbox" id="Fantasy" name="Fantasy" value="Fantasy">
+					  <label for="basketball">Fantasy</label><br>
+					</div>
+			  </div>
+			  <div class="form-row">
+					<div class="form-label">
+						<label for="tech">Technology</label>
+					</div>
+					<div class="form-input">
+					  <input type="checkbox" id="Phones" name="Phones" value="Phones">
+					  <label for="Phones">Phones</label>
+					  <input type="checkbox" id="Tabs" name="Tabs" value="Tabs">
+					  <label for="Tabs">Tabs</label>
+					  <input type="checkbox" id="Laptops" name="Laptops" value="Laptops">
+					  <label for="Laptops">Laptops</label>
+					  <input type="checkbox" id="home" name="home" value="home">
+					  <label for="home">Home Accesories</label><br>
+					</div>
+			  </div>
+			  <input type="submit" value="Submit" style="background-color: powderblue;">
+			</fieldset>
+		</form>
+	</div>
+</body>
+</html>
